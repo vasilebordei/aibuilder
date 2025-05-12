@@ -23,6 +23,8 @@ public class JwtAuthenticationFilter extends GenericFilter {
                          ServletResponse response,
                          FilterChain chain) throws IOException, ServletException {
         HttpServletRequest httpRequest = (HttpServletRequest) request;
+
+
         String authHeader = httpRequest.getHeader("Authorization");
         if (authHeader != null && authHeader.startsWith("Bearer ")) {
             String token = authHeader.substring(7);

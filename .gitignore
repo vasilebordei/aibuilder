@@ -21,6 +21,8 @@ target/
 
 ###
 .env
+src/main/resources/ai_key.json
+
 
 ### NetBeans ###
 /nbproject/private/
